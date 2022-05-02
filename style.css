@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;400;700&display=swap');
+
+body {
+    background: hsl(240, 33%, 8%);
+    box-sizing: border-box;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+#content {
+    max-width: 60%;
+    margin: auto;
+}
+
+#mainTitle {
+    text-align: center;
+    font-size: 70px;
+}
+
+h1, h2 {
+    background: linear-gradient(90deg, rgb(175, 54, 163) 20%, rgb(143, 94, 221) 50%, rgb(23, 91, 216) 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 0;
+}
+
+
+.title {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+#buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.winner1 {
+    position: relative;
+    right: 350px;
+}
+
+.winner2 {
+    position: relative;
+    left: 350px;
+}
+
+#diceScoreContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.playerbox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 3px solid black;
+    width: 220px;
+}
+
+.scoreboard {
+    background: white;
+    border-radius: 5px;
+    height: 100px;
+    width: 220px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.scoretext {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#scoreAmount, #scoreAmount2 {
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px){
+
+    #content{
+        max-width: 100%
+    }
+
+    .playerbox {
+        transform: scale(0.9);
+    }
+
+    #diceScoreContainer{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+
+    #content{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    
+    .playerbox{
+        transform: scale(0.6);
+    }
+
+    #diceScoreContainer{
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (orientation: landscape), (max-width: 500px){
+    #content{
+        max-width: 100%;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    
+    .playerbox{
+        transform: scale(0.7);
+    }
+
+    #diceScoreContainer{
+        display: flex;
+        justify-content: center;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

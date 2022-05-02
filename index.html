@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game - Two Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content">
+    <header id="mainTitle">
+        <h1>Dice game</h1>
+        <p class="instructions">The game is simple<br>
+            Gain points by rolling a dice. Reach 20 points or over to win<br>
+            Dice number 1 will reset the score.<br> HOLD button will save the score and
+            the turn goes to the other player.</p>
+    </header>
+    <div class="title">
+        <h2 id="beginningMsg">Who rolls first?</h2>
+        <h2 id="winGame"></h2>
+        <h2 id="loseGame"></h2>
+    </div>
+    <div id="buttons">
+    <button id="newGameBtn" onclick="newgame()">New Game</button>
+</div>
+<div id="diceScoreContainer">
+    <div class="playerbox">
+    <div class="scoreboard">
+        <p class="scoretext">Total score</p>
+        <div id="scoreAmount"></div>
+    </div>
+    <button id="rollBtn" onclick="diceThrow()">Roll the dice</button>
+    <div id="diceImage" class="dice"></div>
+    <img class="blankdice1" src="images/diceblank.svg" width="200px" height="200px" alt="Blank dice"/>
+    <h2 class="playertext">Player One</h2>
+    </div>
+    <button id="holdBtn" onclick="hold()" style="display: none;">Hold</button>
+    <div class="playerbox">
+        <div class="scoreboard">
+            <p class="scoretext">Total score</p>
+            <div id="scoreAmount2"></div>
+        </div>
+        <button id="rollBtn2" onclick="diceThrow2()">Roll the dice</button>
+        <div id="diceImage2" class="dice"></div>
+        <img class="blankdice2" src="images/diceblank.svg" width="200px" height="200px" alt="Blank dice"/>
+        <h2 class="playertext">Player Two</h2>
+        </div> 
+</div>
+    
+
+    
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
