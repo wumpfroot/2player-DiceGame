@@ -103,12 +103,14 @@ button:hover {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 0;
+    color: black;
 }
 
 #scoreAmount, #scoreAmount2 {
     font-size: 40px;
     font-weight: 100;
     text-align: center;
+    color: rgb(88, 35, 86);
 }
 
 @media only screen and (max-width: 750px){
@@ -150,7 +152,7 @@ button:hover {
     }
 }
 
-@media (orientation: landscape), (max-width: 500px){
+@media (orientation: landscape) and (max-width: 500px){
     #content{
         max-width: 100%;
     }
