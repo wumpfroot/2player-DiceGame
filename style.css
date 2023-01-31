@@ -24,8 +24,8 @@ body {
 h1, h2 {
     background: linear-gradient(90deg, rgb(175, 54, 163) 20%, rgb(143, 94, 221) 50%, rgb(23, 91, 216) 80%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     margin: 0;
 }
 
